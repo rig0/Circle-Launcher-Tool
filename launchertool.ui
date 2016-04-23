@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>361</width>
-    <height>231</height>
+    <width>355</width>
+    <height>250</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -16,109 +16,149 @@
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>355</width>
+    <height>250</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>355</width>
+    <height>250</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>LauncherTool</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
-    <item>
-     <widget class="QGroupBox" name="Name_groupBox">
-      <property name="title">
-       <string>Shortcut Name</string>
-      </property>
-      <widget class="QLineEdit" name="NameInputBox">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>141</width>
-         <height>20</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>20</y>
-         <width>171</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>*Something short with no spaces*</string>
-       </property>
-      </widget>
-     </widget>
-    </item>
-    <item>
-     <widget class="QGroupBox" name="Dir_groupBox_2">
-      <property name="title">
-       <string>Program Location</string>
-      </property>
-      <widget class="QLineEdit" name="DirInputBox">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>281</width>
-         <height>20</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QToolButton" name="DirBrowseButton">
-       <property name="geometry">
-        <rect>
-         <x>300</x>
-         <y>20</y>
-         <width>25</width>
-         <height>19</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>...</string>
-       </property>
-      </widget>
-     </widget>
-    </item>
-    <item>
-     <widget class="QGroupBox" name="icon_groupBox">
-      <property name="title">
-       <string>Icon</string>
-      </property>
-      <widget class="QLineEdit" name="IconInputBox">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>281</width>
-         <height>20</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QToolButton" name="IconBrowseButton">
-       <property name="geometry">
-        <rect>
-         <x>300</x>
-         <y>20</y>
-         <width>25</width>
-         <height>19</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>...</string>
-       </property>
-      </widget>
-     </widget>
-    </item>
-    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-     <widget class="QPushButton" name="CreateButton">
-      <property name="text">
-       <string>Create</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <widget class="QGroupBox" name="Name_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>338</width>
+      <height>59</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Shortcut Name</string>
+    </property>
+    <widget class="QLineEdit" name="NameInputBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>*Something short with no spaces*</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Dir_groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>74</y>
+      <width>338</width>
+      <height>58</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Program Location</string>
+    </property>
+    <widget class="QLineEdit" name="DirInputBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>281</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="DirBrowseButton">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>20</y>
+       <width>25</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="icon_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>138</y>
+      <width>338</width>
+      <height>59</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Icon</string>
+    </property>
+    <widget class="QLineEdit" name="IconInputBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>281</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="IconBrowseButton">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>20</y>
+       <width>25</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="CreateButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>207</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>Create</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
