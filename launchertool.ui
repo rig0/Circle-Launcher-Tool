@@ -29,7 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>LauncherTool</string>
+   <string>Circle Launcher Tool</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="Name_groupBox">
