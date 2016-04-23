@@ -64,7 +64,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>*Something short with no spaces*</string>
+      <string>*Short with no special characters*</string>
      </property>
     </widget>
    </widget>
