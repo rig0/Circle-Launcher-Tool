@@ -117,6 +117,6 @@ void AddIni(const char* appName)
     IniFile << "ButtonImage=" << appName << endl;
     IniFile << "X=0" << endl;
     IniFile << "Y=0" << endl;
-    IniFile << "LeftMouseActionUp=#" << appName << "#" << endl;
+    IniFile << "LeftMouseUpAction=#" << appName << "#" << endl;
     IniFile.close();
 }
