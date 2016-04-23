@@ -110,7 +110,7 @@ void AddIni(const char* appName)
     IniFile.open(IniFile_cc);
     IniFile << "[Rainmeter]" << endl;
     IniFile << "Update=1000" << endl;
-    IniFile << "@include=#Variables.inc" << endl;
+    IniFile << "@include=#@#Variables.inc" << endl;
     IniFile << endl;
     IniFile << "[Image]" << endl;
     IniFile << "Meter=Button" << endl;
