@@ -20,3 +20,4 @@ HEADERS  += launchertool.h
 FORMS    += launchertool.ui
 
 RC_ICONS = launchertool.ico
+

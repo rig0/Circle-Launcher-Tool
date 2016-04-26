@@ -7,8 +7,6 @@
 IDI_ICON1	ICON	DISCARDABLE	"C:\\Users\\ADMIN\\Documents\\GitHub\\Circle-Launcher-Tool\\launchertool.ico"
 
 VS_VERSION_INFO VERSIONINFO
-	FILEVERSION 0,0,0,0
-	PRODUCTVERSION 0,0,0,0
 	FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
 	FILEFLAGS VS_FF_DEBUG
@@ -25,11 +23,9 @@ VS_VERSION_INFO VERSIONINFO
 			BEGIN
 				VALUE "CompanyName", "\0"
 				VALUE "FileDescription", "\0"
-				VALUE "FileVersion", "0.0.0.0\0"
 				VALUE "LegalCopyright", "\0"
 				VALUE "OriginalFilename", "Launcher-Tool.exe\0"
 				VALUE "ProductName", "Launcher-Tool\0"
-				VALUE "ProductVersion", "0.0.0.0\0"
 			END
 		END
 		BLOCK "VarFileInfo"
