@@ -7,6 +7,7 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QTextStream>
+#include <QDesktopServices>
 
 using namespace std;
 
@@ -146,4 +147,9 @@ void AddIni(const char* appName)
     IniFile << "Y=0" << endl;
     IniFile << "LeftMouseUpAction=#" << appName << "#" << endl;
     IniFile.close();
+}
+
+void LauncherTool::on_label_2_linkActivated(const QString &link)
+{
+    QDesktopServices::openUrl(QUrl("http://lybrica.deviantart.com/art/Circle-Launcher-2-8-10-Apr-2016-547475678", QUrl::TolerantMode));
 }

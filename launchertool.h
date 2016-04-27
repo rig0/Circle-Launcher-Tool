@@ -22,6 +22,8 @@ private slots:
 
     void on_CreateButton_clicked();
 
+    void on_label_2_linkActivated(const QString &link);
+
 private:
     Ui::LauncherTool *ui;
 };

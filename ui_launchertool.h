@@ -38,6 +38,7 @@ public:
     QGroupBox *icon_groupBox;
     QLineEdit *IconInputBox;
     QToolButton *IconBrowseButton;
+    QLabel *label_2;
     QPushButton *CreateButton;
     QStatusBar *statusBar;
 
@@ -45,14 +46,14 @@ public:
     {
         if (LauncherTool->objectName().isEmpty())
             LauncherTool->setObjectName(QStringLiteral("LauncherTool"));
-        LauncherTool->resize(355, 250);
+        LauncherTool->resize(355, 280);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(LauncherTool->sizePolicy().hasHeightForWidth());
         LauncherTool->setSizePolicy(sizePolicy);
-        LauncherTool->setMinimumSize(QSize(355, 250));
-        LauncherTool->setMaximumSize(QSize(355, 250));
+        LauncherTool->setMinimumSize(QSize(355, 280));
+        LauncherTool->setMaximumSize(QSize(355, 280));
         centralWidget = new QWidget(LauncherTool);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         Name_groupBox = new QGroupBox(centralWidget);
@@ -75,16 +76,21 @@ public:
         DirBrowseButton->setGeometry(QRect(300, 20, 25, 19));
         icon_groupBox = new QGroupBox(centralWidget);
         icon_groupBox->setObjectName(QStringLiteral("icon_groupBox"));
-        icon_groupBox->setGeometry(QRect(9, 138, 338, 59));
+        icon_groupBox->setEnabled(true);
+        icon_groupBox->setGeometry(QRect(9, 138, 338, 81));
         IconInputBox = new QLineEdit(icon_groupBox);
         IconInputBox->setObjectName(QStringLiteral("IconInputBox"));
         IconInputBox->setGeometry(QRect(10, 20, 281, 20));
         IconBrowseButton = new QToolButton(icon_groupBox);
         IconBrowseButton->setObjectName(QStringLiteral("IconBrowseButton"));
         IconBrowseButton->setGeometry(QRect(300, 20, 25, 19));
+        label_2 = new QLabel(icon_groupBox);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(10, 50, 191, 16));
+        label_2->setMouseTracking(true);
         CreateButton = new QPushButton(centralWidget);
         CreateButton->setObjectName(QStringLiteral("CreateButton"));
-        CreateButton->setGeometry(QRect(140, 207, 75, 23));
+        CreateButton->setGeometry(QRect(140, 230, 75, 23));
         sizePolicy.setHeightForWidth(CreateButton->sizePolicy().hasHeightForWidth());
         CreateButton->setSizePolicy(sizePolicy);
         LauncherTool->setCentralWidget(centralWidget);
@@ -104,8 +110,9 @@ public:
         label->setText(QApplication::translate("LauncherTool", "*Short with no special characters*", 0));
         Dir_groupBox_2->setTitle(QApplication::translate("LauncherTool", "Program Location", 0));
         DirBrowseButton->setText(QApplication::translate("LauncherTool", "...", 0));
-        icon_groupBox->setTitle(QApplication::translate("LauncherTool", "Icon", 0));
+        icon_groupBox->setTitle(QApplication::translate("LauncherTool", "Button Image", 0));
         IconBrowseButton->setText(QApplication::translate("LauncherTool", "...", 0));
+        label_2->setText(QApplication::translate("LauncherTool", "<html><head/><body><p>Read more on the <a href=\"http://lybrica.deviantart.com/art/Circle-Launcher-2-8-10-Apr-2016-547475678\"><span style=\" text-decoration: underline; color:#0000ff;\">deviantart page</span></a></p></body></html>", 0));
         CreateButton->setText(QApplication::translate("LauncherTool", "Create", 0));
     } // retranslateUi
 

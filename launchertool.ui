@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>355</width>
-    <height>250</height>
+    <height>280</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,13 +19,13 @@
   <property name="minimumSize">
    <size>
     <width>355</width>
-    <height>250</height>
+    <height>280</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>355</width>
-    <height>250</height>
+    <height>280</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -105,16 +105,19 @@
     </widget>
    </widget>
    <widget class="QGroupBox" name="icon_groupBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>9</x>
       <y>138</y>
       <width>338</width>
-      <height>59</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
-     <string>Icon</string>
+     <string>Button Image</string>
     </property>
     <widget class="QLineEdit" name="IconInputBox">
      <property name="geometry">
@@ -139,12 +142,28 @@
       <string>...</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Read more on the &lt;a href=&quot;http://lybrica.deviantart.com/art/Circle-Launcher-2-8-10-Apr-2016-547475678&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;deviantart page&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="CreateButton">
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>207</y>
+      <y>230</y>
       <width>75</width>
       <height>23</height>
      </rect>
