@@ -1,6 +1,6 @@
 # Circle-Launcher-Tool
 
-Tool for "Circle Launcher" Rainmeter skin by Lybrica. 
+Tool for "Circle Launcher" Rainmeter skin by Lybrica. (http://fav.me/d91yaxq)
 
 This tool simply automates the process of adding a new icon.
 
