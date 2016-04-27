@@ -69,7 +69,7 @@ void LauncherTool::on_CreateButton_clicked()
     QString AppName_qs = ui->NameInputBox->text();
     string AppName_s = AppName_qs.toStdString();
     const char* AppName_cc = AppName_s.c_str();
-
+	
     QString AppDir_qs = ui->DirInputBox->text();
     string AppDir_s = AppDir_qs.toStdString();
     const char* AppDir_cc = AppDir_s.c_str();
@@ -77,9 +77,36 @@ void LauncherTool::on_CreateButton_clicked()
     QString AppIcon_qs = ui->IconInputBox->text();
     string AppIcon_s = AppIcon_qs.toStdString();
     const char* AppIcon_cc = AppIcon_s.c_str();
+	
+	//Check if "NameInputBox" is empty
+	if (AppName_s == "") {
+		QMessageBox msgBox;
+		msgBox.setText("Need to enter a name");
+		msgBox.exec();
+		return;
+	}
+	
+	//Check if Shortcut Name(NameInputBox)is in Variables.inc
+    string VarFile_s = "@Resources/Variables.inc";
+    const char* VarFile_cc = VarFile_s.c_str();
+
+	string word;
+    string tempVar;
+	ifstream infile;
+	infile.open(VarFile_cc);
+	while (getline(infile, word))
+	{
+		tempvar = word + "|";
+        if (tempVar.find(AppName_cc) != string::npos) {
+			QMessageBox msgBox;
+			msgBox.setText("That name is already used");
+			msgBox.exec();
+			return;
+		}
+	}
 
     AddApp(AppName_cc ,AppDir_cc);
-
+	
     CreateDirectoryA(AppName_cc,NULL);
 
     AddIni(AppName_cc);
