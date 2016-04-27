@@ -96,7 +96,7 @@ void LauncherTool::on_CreateButton_clicked()
 	infile.open(VarFile_cc);
 	while (getline(infile, word))
 	{
-		tempvar = word + "|";
+        tempVar = word + "|";
         if (tempVar.find(AppName_cc) != string::npos) {
 			QMessageBox msgBox;
 			msgBox.setText("That name is already used");
