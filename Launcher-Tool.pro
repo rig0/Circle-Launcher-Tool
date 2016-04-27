@@ -21,3 +21,5 @@ FORMS    += launchertool.ui
 
 RC_ICONS = launchertool.ico
 
+VERSION = 1.0.2.0
+
