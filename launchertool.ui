@@ -156,6 +156,7 @@
      </property>
      <property name="text">
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Read more on the &lt;a href=&quot;http://lybrica.deviantart.com/art/Circle-Launcher-2-8-10-Apr-2016-547475678&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;deviantart page&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Find more icons at &lt; a href=&quot;https://github.com/Kavex/CircleLauncherButtons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color: #0000ff;&quot;&gt;Circle Launcher Buttons&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
